@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="frontpage.css">
+    <link rel="stylesheet" href="darkfront.css">
+    <title>Music list dark</title>
+</head>
+<body>
+   <header>
+        <nav>
+            <ul>
+                <li><a href="dark-mode.html">Home</a></li>
+                <li><a href="">Music</a></li>
+                <li><a href="https://www.instagram.com/visuallywandering/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Music list -->
+<div class="music-player">
+    <h1>Music library </h1>
+    <div class="song-item">
+        <a href="darkfront.html?songId=1">
+        <img src="shiek.jpg" alt="Song 1" class="album-cover" id="song1" >
+        </a>
+        <div class="song-info">
+            <h2 onclick="toggleAudio('audio1')">Break</h2>
+            <p>Sheik</p>
+        </div>
+        <audio src="shiek.mp3" class="audio" id="audio1"></audio>
+    </div>
+        <div class="song-item">
+            <a href="index.html?songId=2">
+                <img src="polo.jpeg" alt="Song 2" class="album-cover" id="song2">
+            </a>
+            <div class="song-info">
+                <h2 onclick="toggleAudio('audio2')">Black hearted</h2>
+                <p>Polo G</p>
+            </div>
+            <audio src="black-heart.mp3" class="audio" id="audio2"></audio>
+        </div>
+        <div class="song-item">
+            <a href="index.html?songId=3">
+                <img src="jonas.jpeg" alt="Song 3" class="album-cover" id="song3">
+            </a>
+            <div class="song-info">
+                <h2 onclick="toggleAudio('audio3')">Mama</h2>
+                <p>Jonas Blue</p>
+            </div>
+            <audio src="Jonas Blue – Mama mp3.mp3" class="audio" id="audio3" ></audio>
+        </div>
+        <div class="song-item">
+            <a href="index.html?songId=4">
+            <img src="loote.jpeg" alt="Song 4" class="album-cover">
+            </a>
+            <div class="song-info">
+                <h2 onclick="toggleAudio('audio4')">Are you sure?</h2>
+                <p>Loote</p>
+            </div>
+            <audio src="sure.mp3" class="audio" id="audio4"></audio>
+        </div>
+        <div class="song-item">
+            <a href="index.html?songId=5">
+            <img src="rakhim.jpg" alt="Song 5" class="album-cover" >
+            </a>
+            <div class="song-info">
+                <h2 onclick="toggleAudio('audio5')">look at me habibi</h2>
+                <p>Rakhim</p>
+            </div>
+            <audio src="look.mp3" class="audio" id="audio5"></audio>
+        </div>
+        <div class="song-item">
+            <img src="paris.png" alt="Song 2" class="album-cover" onclick="showSongInfo('audio4')" >
+            <div class="song-info">
+                <h2 onclick="toggleAudio('audio6')">Paris</h2>
+                <p>chainsmokers</p>
+            </div>
+            <audio src="y2mate.is - The Chainsmokers - Paris Lyrics -Kcz2BnDpUpA-192k-1688086583.mp3" class="audio" id="audio6"></audio>
+        </div>
+        <!-- Add more song items here -->
+    </div>
+</div>
+
+
+
+
+    <script src="scripts.js"></script>
+
+    <div class="music-player-nav">
+        <a href="#" class="nav-item"><i class="fas fa-home"></i>Home</a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+        <a href="premium.html" class="nav-item"><i class="fas fa-music" style="color: #eef21c;"></i> Premium</a>
+      </div>
+
+      <footer>
+        <p>&copy; 2023 Ian Samuel Frallon. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
